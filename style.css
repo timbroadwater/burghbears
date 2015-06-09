@@ -1,0 +1,423 @@
+/*
+Theme Name: BurghBears
+Theme URI: http://wordpress.org/themes/burghbears
+Author: Tim Broadwater
+Author URI: http://www.timbroadwater.com
+Description: A WordPress theme for the Burgh Bears.
+Version: 2.0
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+Tags: bears, mobile, rwd, Pittsburgh
+Text Domain: burghbears
+
+BurghBears WordPress Theme © 2015 Tim Broadwater
+BurghBears is distributed under the terms of the GNU GPL
+*/
+
+body, div {
+  font-size:100%;
+  padding:0;
+  border:0;
+  margin:0;
+  vertical-align:baseline;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+div {
+  display:block;
+  overflow:hidden;
+}
+h1 {
+	text-transform: uppercase;
+	font-size: 250%;
+}
+hr {
+  	width: 25%;
+  	height: 3px;
+	border: 0;
+	background: #ffc400;
+	margin: 45px auto;
+}
+p, .container #content li {
+  font-size: 100%;
+  line-height: 150%;
+}	
+.button {
+  border: 2px solid #000;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 125%;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  padding: 20px 0;
+  margin: 5% 0;
+  width: 90%;
+}
+.button .fa {
+  color: #ffc400;
+  padding-right: 20px;
+  font-size: 150%;		  
+}  
+.button:hover {
+  border: 2px solid #ffc400;
+  color: #fff;
+  background:#000;  
+}
+.wrap {
+  width:90%;
+  max-width:1366px;
+  padding: 100px 0;
+  margin:0 auto;
+}
+.hide {
+  display:none;
+ }
+/************************************************
+
+	HEADER & FOOTER
+
+************************************************/
+.theader {
+  width:100%;
+  overflow: hidden;
+  border-bottom: 4px solid #fec516;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  background: #fff;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.15);
+}
+.hwrap {
+  width:90%;
+  max-width:1366px;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+.hwrap .fa-bars {
+  display: block;
+  width:30%;
+  float: right;
+  text-align: right;
+  font-size: 225%;
+  padding: 14px 0px 0px;
+  cursor: pointer;
+}
+.header-logo {
+  width:60%;
+  float: left;
+  text-align: left;
+}
+.header-logo img {
+  max-width:212px;
+  width: 100%;
+  height: auto;
+  text-align: left;
+}
+.theader .menu {
+  width: 100%;
+  height: auto;
+  float: right;
+  padding: 10px 0 0 0;
+}
+.theader .menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+}
+.theader .menu ul li {
+  display: inline-block;
+  width: 50%;
+  float: left;
+  text-align: left;
+}
+.theader .menu ul li:before {
+  content: '\f105'; 
+  font-family: 'FontAwesome'; 
+  display: inline-block;
+  color: #FEC516; 
+}
+.theader .menu ul a {
+  font-size: 150%;
+  color: #000;
+  text-decoration: none;
+  padding: 0 0 0 4px;
+}
+.theader .menu ul a:hover {
+  text-decoration: underline;
+}
+.theader .menu ul ul {
+  display: none;
+}
+.footer {}
+.fwrap {
+  width:90%;
+  max-width:1366px;
+  padding: 20px 0;
+  margin:0 auto;
+}
+.footer-copyright {
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 80%;
+  float: left;
+  width: 100%;
+}
+.footer-copyright a {
+  color:#000;
+  text-decoration: none;
+  border-bottom: 1px dotted #000;
+}
+.footer-social {
+  float: right;
+  width: 100%;
+  text-align: center;
+}
+.footer-social a {
+  color: #FFC400;
+  font-size: 200%;
+  margin: 0 10px 0 0;
+  line-height: 100%;
+}  
+.footer-social a:hover {
+  color: #000;
+}
+	 
+/************************************************
+
+	BACKPAGES
+
+************************************************/
+.container #content {
+	width: 90%;
+	max-width:1366px;
+  	margin:0 auto;
+	text-align: left;
+}
+.container #content a {
+  color: #FEC516;
+}
+.container #content a:hover {
+  color: #d5a614;
+}
+.container {
+  border-bottom: 4px solid #FEC516;
+}
+.container #content a img {
+	border-bottom: none;
+}
+#nav-below {
+  margin: 0 0 100px 0;
+}
+article {
+  border-top: 4px solid #FEC516;
+  margin: 0 0 100px 0;
+  padding: 100px 0 0 0;
+}
+#sidebar {
+  border-top: 4px solid #FEC516;
+}
+#sidebar ul, #sidebar ol {
+  list-style-type: none;
+}
+.xoxo {
+    width: 640px;
+    margin: 10px 0 40px;
+    text-align: left;
+    padding: 0;
+}
+.xoxo a {
+  color: #FEC516;
+}
+.xoxo a:hover {
+  color: #d5a614;
+}
+.xoxo ul {
+  padding: 0;
+  margin: 0;
+}
+.widget-area {
+  width:90%;
+  max-width:1366px;
+  padding: 0;
+  margin:0 auto;
+}
+  
+/************************************************
+
+	HOME PAGE
+
+************************************************/
+.home-feature {
+  height: auto;
+  border-bottom: 4px solid #fec516;
+  margin: 0;
+  padding: 0;
+  line-height: 0;  
+}
+.home-feature img {
+  width: 100%;
+  height: auto;
+}
+.home-about {}
+
+.home-about::after, .home-maul::after, .home-community::after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-bottom: 0px solid transparent !important;
+    border-right: 30px solid transparent !important;
+    border-left: 30px solid transparent !important;
+    left: 50%;
+    margin-left: -29px;
+    z-index: 1;
+    border-top: 30px solid #fff;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+}
+.home-events {
+  background: url("images/feature2.jpg") no-repeat center center;
+  background-size: cover;
+}
+.home-events h1 {
+  color: #fff;
+}
+.home-events p {
+  color: #fff;
+  margin: 0 0 20px 0;
+}			  
+.home-events .button {
+    border: 2px solid #fff;
+    color: #fff;
+}
+#recevents {
+  max-width: 850px;
+  width:90%;
+  vertical-align: top;
+  margin-bottom: 20px;
+}  
+#recevents .marker {
+  color: #FFC400;
+}	  
+#recevents .fa {
+  color: #FFC400;
+  font-size: 200%;
+  padding-right: 20px;
+}  
+.home-maul {}
+.home-member {
+  background: url("images/feature3.jpg") no-repeat center center;
+  background-size: cover;
+}
+.home-member h1 {
+  color: #fff;
+}
+.home-member p {
+  color: #fff;
+}
+.home-member a {
+  color: #FFC400;
+  text-decoration: none;
+  border-bottom: 1px dotted #FFC400; 
+}
+.home-member .button {
+  border: 2px solid #fff;
+  color: #fff;
+}
+.home-community .logos a {
+	display: inline-block;
+	margin: 20px;
+}
+.home-gallery {
+  background: #000;
+}
+.home-gallery h1 {
+  color: #fff;
+}
+.home-gallery p {
+  color: #fff;
+}
+.home-gallery .button {
+  border: 2px solid #fff;
+  color: #fff;
+}
+.popup-gallery a {
+  margin: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  height: 100px;
+  width: 150px;
+  display: inline-block;
+}
+
+/*********************************************************************
+	768px to 1024px
+**********************************************************************/
+@media screen and (min-width: 768px) {
+  
+  .theader .menu {
+	width: 70%;
+  }
+  .theader .menu ul li {
+	width: auto;
+	float: inherit;
+	text-align: center;
+  }
+  .theader .menu ul li:before {
+	display: none; 
+  }
+  .theader .menu ul a {
+    padding: 0 20px;
+  }
+  p, .container #content li {
+  font-size: 125%;
+  }
+  .header-logo {
+	width:30%;
+  }
+  .hwrap .fa-bars {
+    display: none;
+  }
+  .hwrap .menu {
+    display: block !important;
+  }
+  .button {
+	padding: 20px 40px;
+	margin: 15px;	  
+	width:auto;
+  } 
+  .theader .menu ul a {
+    font-size: 125%;
+  }
+  .footer-copyright {
+	text-align: left;
+	width: 50%;
+  }
+  .footer-social {
+	width: 50%;
+	text-align: right;
+  }
+  #recevents .fa {
+	font-size: 400%;
+  }  
+}
+
+/*********************************************************************
+	1024px+
+**********************************************************************/
+@media screen and (min-width: 1024px) {
+  
+  .theader .menu ul a {
+	font-size: 150%;
+	color: #000;
+	text-decoration: none;
+	padding: 0 20px;
+  }
+  p, .container #content li {
+	font-size: 150%;
+	text-align: left;
+  }	
+}
